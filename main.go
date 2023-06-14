@@ -101,10 +101,22 @@ import "fmt"
 // }
 
 // slice
+// func main() {
+// 	numbers:= []int{100,200}// default
+// 	numbers = append(numbers, 300)
+// 	fmt.Println(numbers)
+// 	fmt.Println(numbers[:])
+// 	fmt.Println(numbers[1:])
+// }
+
+// map
 func main() {
-	numbers:= []int{100,200}// default
-	numbers = append(numbers, 300)
-	fmt.Println(numbers)
-	fmt.Println(numbers[:])
-	fmt.Println(numbers[1:])
+	country:= map[string]string{"TH": "Thailand", "JP": "Japan"}
+	value, check := country["JP"]
+
+	if(check) {
+		fmt.Println(value)
+	}else {
+		fmt.Println("Not Found")
+	}
 }
