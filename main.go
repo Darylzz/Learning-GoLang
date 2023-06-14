@@ -91,11 +91,20 @@ import "fmt"
 // }
 
 // Array
+// func main() {
+// 	 numbers := [3]int{100,200,300}
+// 	 numbers2 := [...]int{400,500,600,700,800,900}
+// 	fmt.Println(numbers)
+// 	size:= len(numbers)
+// 	fmt.Println("Size of array =", size)
+// 	fmt.Println("Not fix size in array =", numbers2)
+// }
+
+// slice
 func main() {
-	 numbers := [3]int{100,200,300}
-	 numbers2 := [...]int{400,500,600,700,800,900}
+	numbers:= []int{100,200}// default
+	numbers = append(numbers, 300)
 	fmt.Println(numbers)
-	size:= len(numbers)
-	fmt.Println("Size of array =", size)
-	fmt.Println("Not fix size in array =", numbers2)
+	fmt.Println(numbers[:])
+	fmt.Println(numbers[1:])
 }
