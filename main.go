@@ -40,11 +40,24 @@ import "fmt"
 // }
 
 //Check Equal
+// func main() {
+// 	const number1, number2 int = 10,3
+// 	fmt.Println("Equal? =", number1 == number2)
+// 	fmt.Println("Not Equal? =", number1 != number2)
+// 	fmt.Println(number1, ">", number2, "=", number1 > number2)
+// 	fmt.Println(number1, "<", number2, "=", number1 < number2)
+// 	fmt.Println(number1, ">=", number2, "=", number1 >= number2)
+// }
+
+// Scanf
 func main() {
-	const number1, number2 int = 10,3
-	fmt.Println("Equal? =", number1 == number2)
-	fmt.Println("Not Equal? =", number1 != number2)
-	fmt.Println(number1, ">", number2, "=", number1 > number2)
-	fmt.Println(number1, "<", number2, "=", number1 < number2)
-	fmt.Println(number1, ">=", number2, "=", number1 >= number2)
+	// var name string
+	var score int
+	// fmt.Print("Fill student name =")
+	// fmt.Scanf("%s", &name)
+	// fmt.Println("Hello student name =", name)
+	
+	fmt.Print("Fill score student =")
+	fmt.Scanf("%d", &score)
+	fmt.Println("Score student =", score)
 }
