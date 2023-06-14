@@ -50,14 +50,29 @@ import "fmt"
 // }
 
 // Scanf
+// func main() {
+// 	// var name string
+// 	var score int
+// 	// fmt.Print("Fill student name =")
+// 	// fmt.Scanf("%s", &name)
+// 	// fmt.Println("Hello student name =", name)
+
+// 	fmt.Print("Fill score student =")
+// 	fmt.Scanf("%d", &score)
+// 	fmt.Println("Score student =", score)
+// }
+
+// if...else
 func main() {
-	// var name string
-	var score int
-	// fmt.Print("Fill student name =")
-	// fmt.Scanf("%s", &name)
-	// fmt.Println("Hello student name =", name)
-	
-	fmt.Print("Fill score student =")
-	fmt.Scanf("%d", &score)
-	fmt.Println("Score student =", score)
+	var number int
+	fmt.Print("Fill number =")
+	fmt.Scanf("%d", &number)
+
+	if(number == 1) {
+		fmt.Println("Open book bank")
+	}else if(number == 2) {
+		fmt.Println("Deposit money")
+	}else {
+		fmt.Println("Invalid Number")
+	}
 }
