@@ -28,13 +28,23 @@ import "fmt"
 // }
 
 //Operator
+// func main() {
+// 	// var number1 int = 10
+// 	// var number2 int = 3
+// 	var number1, number2 int = 10,3
+// 	fmt.Println("Sum =", number1 + number2)
+// 	fmt.Println("Sum =", number1 - number2)
+// 	fmt.Println("Sum =", number1 * number2)
+// 	fmt.Println("Sum =", number1 / number2)
+// 	fmt.Println("Sum =", number1 % number2)
+// }
+
+//Check Equal
 func main() {
-	// var number1 int = 10
-	// var number2 int = 3
-	var number1, number2 int = 10,3
-	fmt.Println("Sum =", number1 + number2)
-	fmt.Println("Sum =", number1 - number2)
-	fmt.Println("Sum =", number1 * number2)
-	fmt.Println("Sum =", number1 / number2)
-	fmt.Println("Sum =", number1 % number2)
+	const number1, number2 int = 10,3
+	fmt.Println("Equal? =", number1 == number2)
+	fmt.Println("Not Equal? =", number1 != number2)
+	fmt.Println(number1, ">", number2, "=", number1 > number2)
+	fmt.Println(number1, "<", number2, "=", number1 < number2)
+	fmt.Println(number1, ">=", number2, "=", number1 >= number2)
 }
