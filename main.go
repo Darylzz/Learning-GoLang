@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // func main() {
 // 	var name string = "Cheer Ingkarat"
@@ -63,16 +65,29 @@ import "fmt"
 // }
 
 // if...else
+// func main() {
+// 	var number int
+// 	fmt.Print("Fill number =")
+// 	fmt.Scanf("%d", &number)
+
+// 	if(number == 1) {
+// 		fmt.Println("Open book bank")
+// 	}else if(number == 2) {
+// 		fmt.Println("Deposit money")
+// 	}else {
+// 		fmt.Println("Invalid Number")
+// 	}
+// }
+
+// Switch case
 func main() {
 	var number int
-	fmt.Print("Fill number =")
+	fmt.Print("Fill Number =")
 	fmt.Scanf("%d", &number)
 
-	if(number == 1) {
-		fmt.Println("Open book bank")
-	}else if(number == 2) {
-		fmt.Println("Deposit money")
-	}else {
-		fmt.Println("Invalid Number")
+	switch number {
+	case 1: fmt.Println("Open Book Bank")
+	case 2: fmt.Println("Deposit Money")
+	default: fmt.Println("Invalid")
 	}
 }
