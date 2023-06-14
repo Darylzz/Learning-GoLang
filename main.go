@@ -18,11 +18,23 @@ import "fmt"
 // 	fmt.Println("My name is", name)
 // }
 
+// func main() {
+// 	name:= "Cheer Ingkarat"
+// 	age:= 25
+// 	score:= 95.8
+// 	fmt.Printf("Type name = %T\n", name)
+// 	fmt.Printf("Type age = %T\n",age)
+// 	fmt.Printf("Type score = %T", score)
+// }
+
+//Operator
 func main() {
-	name:= "Cheer Ingkarat"
-	age:= 25
-	score:= 95.8
-	fmt.Printf("Type name = %T\n", name)
-	fmt.Printf("Type age = %T\n",age)
-	fmt.Printf("Type score = %T", score)
+	// var number1 int = 10
+	// var number2 int = 3
+	var number1, number2 int = 10,3
+	fmt.Println("Sum =", number1 + number2)
+	fmt.Println("Sum =", number1 - number2)
+	fmt.Println("Sum =", number1 * number2)
+	fmt.Println("Sum =", number1 / number2)
+	fmt.Println("Sum =", number1 % number2)
 }
