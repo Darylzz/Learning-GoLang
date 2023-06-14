@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // func main() {
 // 	var name string = "Cheer Ingkarat"
@@ -80,14 +78,24 @@ import (
 // }
 
 // Switch case
-func main() {
-	var number int
-	fmt.Print("Fill Number =")
-	fmt.Scanf("%d", &number)
+// func main() {
+// 	var number int
+// 	fmt.Print("Fill Number =")
+// 	fmt.Scanf("%d", &number)
 
-	switch number {
-	case 1: fmt.Println("Open Book Bank")
-	case 2: fmt.Println("Deposit Money")
-	default: fmt.Println("Invalid")
-	}
+// 	switch number {
+// 	case 1: fmt.Println("Open Book Bank")
+// 	case 2: fmt.Println("Deposit Money")
+// 	default: fmt.Println("Invalid")
+// 	}
+// }
+
+// Array
+func main() {
+	 numbers := [3]int{100,200,300}
+	 numbers2 := [...]int{400,500,600,700,800,900}
+	fmt.Println(numbers)
+	size:= len(numbers)
+	fmt.Println("Size of array =", size)
+	fmt.Println("Not fix size in array =", numbers2)
 }
